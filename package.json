@@ -1,0 +1,65 @@
+{
+	"name": "vs-code-schemas-common-list",
+	"displayName": "Schemas Common List",
+	"description": "Inserts a bunch of common schemas list into the VS Code Settings",
+	"version": "0.0.1",
+	"publisher": "chrisvltn",
+  	"icon": "images/icon.png",
+	"engines": {
+		"vscode": "^1.13.0"
+	},
+    "license": "LICENSE.md",
+    "homepage": "https://github.com/chrisvltn/vs-code-schemas-common-list/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/chrisvltn/vs-code-schemas-common-list/issues",
+        "email": "chris_valentin@outlook.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/chrisvltn/vs-code-schemas-common-list.git"
+	},
+	"keywords": [
+		"schemas",
+		"common",
+		"list",
+		"json",
+		"suggest"
+	],
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/src/extension",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"properties": {
+				"json.personalSchemas": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"title": "Schema",
+						"properties": {}
+					},
+					"default": [],
+					"description": "List of json schemas"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "tsc -p ./",
+		"compile": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^2.0.3",
+		"vscode": "^1.0.0",
+		"mocha": "^2.3.3",
+		"@types/node": "^6.0.40",
+		"@types/mocha": "^2.2.32"
+	}
+}
