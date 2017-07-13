@@ -2,7 +2,7 @@
 	"name": "vs-code-schemas-common-list",
 	"displayName": "Schemas Common List",
 	"description": "Inserts a bunch of common schemas list into the VS Code Settings",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "chrisvltn",
   	"icon": "images/icon.png",
 	"engines": {

@@ -22,5 +22,5 @@ Done! Now you can write json free and securely!
 ## LICENSE
 See [License](LICENSE.md) file.
 
-[it]: <(https://github.com/chrisvltn/vs-code-schemas-common-list.git)>
-[repository]: <(https://github.com/chrisvltn/vs-code-schemas-common-list.git)>
+[it]: <https://github.com/chrisvltn/vs-code-schemas-common-list.git>
+[repository]: <https://github.com/chrisvltn/vs-code-schemas-common-list.git>
